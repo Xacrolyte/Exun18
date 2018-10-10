@@ -7,20 +7,23 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
-	<div class="container cflex-col-full">
+	<div class="loader cflex-full">
 		<div class="ims">
 			<img src="hog.png" class="hog h1">
 			<div class="him">
 				<img src="hog.png" class="hog h2">
 			</div>
 		</div>
+	</div>
+
+	<div class="container cflex-col-full">
 		<div class="back">
 			<div class="moving moving1">
 				<div class="m m1">
 					<img src="teleportation.png" class="gra">
 				</div>
 				<div class="m m2">
-					<img src="watch.png" class="wat">
+					<img src="broom.png" class="wat">
 				</div>
 			</div>
 			<div class="moving moving2">
@@ -28,7 +31,7 @@
 					<img src="man.png" class="gra">
 				</div>
 				<div class="m m2">
-					<img src="watch.png" class="wat">
+					<img src="slip.png" class="wat">
 				</div>
 			</div>
 			<div class="moving moving3">
@@ -50,8 +53,18 @@
 			</div>
 		</div>
 		<div class="blank cflex-col">
-			<div class="blank1 full"></div>
-			<div class="blank2 full"></div>
+			<div class="blank1 flex-full">
+				<div class="rect b cflex">
+					EXPLORE
+				</div>
+			</div>
+			<div class="blank2 full">
+				<div class="but">
+					<div class="rect rect2 cflex">
+						<a href="app/index.html">EXPERIENCE IT YOURSELF</a>
+					</div>
+				</div>
+			</div>
 			<div class="blank3 full"></div>
 			<div class="blank4 full"></div>
 		</div>
@@ -62,9 +75,6 @@
 					<div class="sub">
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 						tempor incididunt ut labore et dolore.
-					</div>
-					<div class="rect">
-						EXPLORE
 					</div>
 				</div>	
 			</div>
@@ -90,12 +100,6 @@
 				<div class="spells s4">
 					<span>Gravitas<br></span>
 					<span class="su">Lorem ipsum dolor sit amet.</span>
-				</div>
-
-				<div class="but">
-					<div class="rect rect2">
-						EXPERIENCE IT YOURSELF
-					</div>
 				</div>
 			</div>
 			<div class="page3 full">
@@ -160,6 +164,27 @@
 	</div>
 
 	<script type="text/javascript">
+		setTimeout(function(){
+			$(".loader").css({"opacity":"0"})
+		}, 13000)
+
+		setTimeout(function(){
+			$(".loader").css({"display":"none"})
+		}, 14500)
+
+		$(".b").click(function(){
+			$(".container").css({"transform":"translateY(-100vh)  "})
+			$(".moving").css({"border-radius":"9vw","height":"14vw", "width":"14vw"})
+			$(".moving1").css({"transform":"translate(6vw, 132vh) "})
+			$(".moving2").css({"transform":"translate(-32vw, 132vh) "})
+			$(".moving3").css({"transform":"translate(31vw, 132vh) "})
+			$(".moving4").css({"transform":"translate(-5vw, 132vh )"})
+			setTimeout(function(){
+				$(".spells span").css({"top":"0"})
+				$(".su").css({"top":"30px"})
+				$(".m1").css({"transform":"scale(1)"})
+			},2200)
+		})
 		$('.blank1').on('mousewheel', function(updo){
 			if(updo.originalEvent.wheelDelta/120 < 0) {
 				$(".container").css({"transform":"translateY(-100vh)  "})
@@ -213,15 +238,15 @@
 				
 				$(".m2").css({"transform":"scale(0)"})
 				setTimeout(function(){
-				$(".container").css({"transform":"translateY(-100vh)  "})
+					$(".container").css({"transform":"translateY(-100vh)  "})
 					$(".moving").css({"border-radius":"9vw","height":"14vw", "width":"14vw"})
 					$(".moving1").css({"transform":"translate(6vw, 132vh) "})
 					$(".moving2").css({"transform":"translate(-32vw, 132vh) "})
 					$(".moving3").css({"transform":"translate(31vw, 132vh) "})
 					$(".moving4").css({"transform":"translate(-5vw, 132vh )"})
 				},2200)
-					setTimeout(function(){
-						$(".m1").css({"transform":"scale(1)"})
+				setTimeout(function(){
+					$(".m1").css({"transform":"scale(1)"})
 				},4300)
 			}
 		})

@@ -2,7 +2,14 @@ body{
 	margin: 0;
 	overflow-x: hidden;
 	overflow-y: hidden;
+	cursor: url("mouse.png") 25 15, auto;
 }
+
+a{
+	text-decoration: none;
+	color: #333;
+}
+
 /*loading animtion*/
 .container{
 	position: absolute;
@@ -10,35 +17,47 @@ body{
 	overflow:hidden; 
 	transform: translateY(0vh);
 	transition: all 1.5s ease-in-out;
+	cursor: url("mouse.png") 25 15, auto;
+
+}
+
+
+.loader{
+	position: absolute;
+	z-index: 1000;	
+	background: #fff;
+	transition: all 0.5s ease-in-out;
 }
 
 .ims{
-	position: absolute;
-	height: 300px;
+	position: relative;
+	height: 300px;	
 	width: 300px;
 	overflow: hidden;
 	animation: move 12s ease-in-out;
 	transform: translate(0px, 0px) scale(1);
 	animation-fill-mode: forwards;
-	display: none;
+	top: 0;
 }
 
 .hog{
+	top: 0;	
 	height: 300px;
-	width: 300px
+	width: 300px;
 	position: absolute;
 }
 
 .h1{
-	opacity: 0.15;
-	filter: grayscale(0.4);
+	opacity: 0.3;
+	filter: grayscale(0.2);
 }
 
 .h2{
-	opacity: 0.7;
+	opacity: 0.8;
 }
 
 .him{
+	height: 300px;
 	position: absolute;
 	top: 0;
 	width: 1px;
@@ -51,7 +70,7 @@ body{
 	0%{width: 0px}
 	100%{width: 300px}
 }
-/*
+
 @keyframes move{
 	0%{transform: translate(0px, 0px) scale(1);}
 	10%{transform: translate(0px, 0px) scale(0.7);}
@@ -62,10 +81,9 @@ body{
 	60%{transform: translate(0px, 0px) scale(1);}
 	70%{transform: translate(0px, 0px) scale(0.7);}
 	80%{transform: translate(0px, 0px) scale(1);}
-
 	100%{transform: translate(0px, -0px) scale(0); opacity: 0;}
 }
-*/
+
 
 /*finish loading animation*/
 
@@ -76,6 +94,16 @@ body{
 
 
 /*main page start*/
+
+.blank1{
+	align-items: center;
+}
+
+.b{
+	margin-left: 7vw;
+	margin-top: 7vh;
+}
+
 .pages{
 	display: flex;
 	height: auto;
@@ -137,6 +165,10 @@ body{
 	right: 0;
 }
 
+.blank2{
+	position: relative;
+}
+
 .page1{
 	background: url(back2.png);
 	background-size: cover;
@@ -146,13 +178,13 @@ body{
 .maintext{
 	width: 30vw;
 	margin-left: 7vw;
-	margin-top: -5vh;
+	margin-top: -12vh;
 	font-family: poppins;
 	font-size: 15px;
 }
 
 .heading{
-	font-weight: bolder;
+	font-weight: 900;
 	font-size: 45px;
 	letter-spacing: 2px;
 }
@@ -165,9 +197,6 @@ body{
 .rect{
 	width: 150px;
 	height: 50px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	background: linear-gradient(to right, #616CF6, #76E3D4);
 	border-radius: 100px;
 	color: #eee;
@@ -175,6 +204,7 @@ body{
 	letter-spacing: 2px;
 	box-shadow: 5px 20px 30px 0 rgba(0,0,0,0.1);
 	font-weight: 600;
+	cursor: pointer;
 }
 
 .page2{
@@ -318,7 +348,14 @@ body{
 }
 
 .rect2{
-	width: 260px;
+	width: 280px;
+	color: #333;
+	font-size: 16px;
+	letter-spacing: 2px;
+	font-weight: 600;
+	box-shadow: 5px 20px 30px 0 rgba(0,0,0,0.05);
+	background: transparent;
+	border: 2px solid #76E3D4;
 }
 
 .gra{
