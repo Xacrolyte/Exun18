@@ -2,6 +2,7 @@ body{
 	margin: 0;
 	overflow-x: hidden;
 	overflow-y: hidden;
+	font-family: 'Poppins',sans-serif;
 	cursor: url("mouse.png") 25 15, auto;
 }
 
@@ -179,7 +180,6 @@ a{
 	width: 30vw;
 	margin-left: 7vw;
 	margin-top: -12vh;
-	font-family: poppins;
 	font-size: 15px;
 }
 
@@ -265,7 +265,6 @@ a{
 	top: 31vh;
 	height: 45vh;
 	width: 100%;
-	font-family: poppins;
 	margin: 0 0px 0 20px;
 }
 .dhead{
@@ -290,7 +289,6 @@ a{
 .spells{
 	width: 12.6vw;
 	height: 6vh;
-	font-family: poppins;
 	font-weight: bolder;
 	text-align: center;
 	font-size: 22px;
