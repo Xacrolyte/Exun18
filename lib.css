@@ -1,0 +1,85 @@
+/*flex box align start*/
+[class*=flex] {
+	display: flex;
+}
+
+[class*=cflex] {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+[class*=lflex] {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+[class*=rflex] {
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+
+[class*=col] {
+	flex-direction: column;
+}
+
+[class*=rcol] {
+	flex-direction: column-reverse;
+}
+
+[class*=rrow] {
+	flex-direction: row-reverse;
+}
+
+/*flex box align end*/
+/*page layouts start*/
+[class*=full] {
+	width: 100vw;
+	height: 100vh;
+}
+
+[class*=halfw] {
+	width: 50vw;
+	height: 100vh;
+}
+
+[class*=halfh] {
+	width: 100vw;
+	height: 50vh;
+}
+
+[class*=perfull] {
+	width: 100%;
+	height: 100%;
+}
+
+[class*=perhalf] {
+	width: 50%;
+	height: 50%;
+}
+
+[class*=perhalfw] {
+	width: 50%;
+	height: 100vh;
+}
+
+[class*=perhalfh] {
+	width: 100vw;
+	height: 50%;
+	justify-content: space-around;
+}
+
+[class*=perfullw] {
+	width: 100%;
+	height: 100vh;
+}
+
+[class*=perfullh] {
+	width: 100vw;
+	height: 100%;
+}
+/* page layouts end */
+
+/*# sourceMappingURL=lib.css.map */

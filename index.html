@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="lib.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,900" rel="stylesheet"> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<div class="container cflex-col-full">
+		<div class="ims">
+			<img src="hog.png" class="hog h1">
+			<div class="him">
+				<img src="hog.png" class="hog h2">
+			</div>
+		</div>
+		<div class="back">
+			<div class="moving moving1">
+				<div class="m m1">
+					<img src="teleportation.png" class="gra">
+				</div>
+				<div class="m m2">
+					<img src="watch.png" class="wat">
+				</div>
+			</div>
+			<div class="moving moving2">
+				<div class="m m1">
+					<img src="man.png" class="gra">
+				</div>
+				<div class="m m2">
+					<img src="watch.png" class="wat">
+				</div>
+			</div>
+			<div class="moving moving3">
+				<div class="m m1">
+					<img src="push.png" class="gra">
+				</div>
+				<div class="m m2">
+					<img src="watch.png" class="wat">
+				</div>
+			</div>
+			<div class="moving moving4">
+				<div class="m m1">
+					<img src="gravity.png" class="gra">
+				</div>
+
+				<div class="m m2">
+					<img src="watch.png" class="wat">
+				</div>
+			</div>
+		</div>
+		<div class="blank cflex-col">
+			<div class="blank1 full"></div>
+			<div class="blank2 full"></div>
+			<div class="blank3 full"></div>
+			<div class="blank4 full"></div>
+		</div>
+		<div class="pages flex-col">
+			<div class="page1 col-lflex-full">
+				<div class="maintext">
+					<div class="heading">Hey There Lupin.</div>
+					<div class="sub">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore.
+					</div>
+					<div class="rect">
+						EXPLORE
+					</div>
+				</div>	
+			</div>
+			<div class="page2 full">
+				<div class="phead">
+					<div class="heading">WAND SPELLS</div>
+					<div class="sub">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+					</div>
+				</div>
+				<div class="spells s1">
+					<span>tilemetafora</span>
+					<span class="su">Lorem ipsum dolor sit amet.</span>
+				</div>
+				<div class="spells s2">
+					<span>exodus</span>
+					<span class="su">Lorem ipsum dolor sit amet.</span>
+				</div>
+				<div class="spells s3">
+					<span>impendimenta </span>
+					<span class="su">Lorem ipsum dolor sit amet.</span>
+				</div>
+				<div class="spells s4">
+					<span>Gravitas<br></span>
+					<span class="su">Lorem ipsum dolor sit amet.</span>
+				</div>
+
+				<div class="but">
+					<div class="rect rect2">
+						EXPERIENCE IT YOURSELF
+					</div>
+				</div>
+			</div>
+			<div class="page3 full">
+
+				<div class="phead">
+					<div class="heading">BATTLE GEAR</div>
+					<div class="sub">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+					</div>
+				</div>
+				<div class="box box1">
+					<div class="desc">
+						<div class="dhead">Lorem Ipsum.</div>
+						<div class="subhead">Lorem ipsum dolor sit amet.</div>
+						<div class="dtext">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit .
+						</div>
+					</div>
+				</div>
+				<div class="box box2">
+					<div class="desc">
+						<div class="dhead">Lorem Ipsum.</div>
+						<div class="subhead">Lorem ipsum dolor sit amet.</div>
+						<div class="dtext">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit .
+						</div>
+					</div>
+				</div>
+
+				<div class="box box3">
+					<div class="desc">
+						<div class="dhead">Lorem Ipsum.</div>
+						<div class="subhead">Lorem ipsum dolor sit amet.</div>
+						<div class="dtext">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit .
+						</div>
+					</div>
+				</div>
+				<div class="box box4">
+					<div class="desc">
+						<div class="dhead">Lorem Ipsum.</div>
+						<div class="subhead">Lorem ipsum dolor sit amet.</div>
+						<div class="dtext">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit .
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		$('.blank1').on('mousewheel', function(updo){
+			if(updo.originalEvent.wheelDelta/120 < 0) {
+				$(".container").css({"transform":"translateY(-100vh)  "})
+				$(".moving").css({"border-radius":"9vw","height":"14vw", "width":"14vw"})
+				$(".moving1").css({"transform":"translate(6vw, 132vh) "})
+				$(".moving2").css({"transform":"translate(-32vw, 132vh) "})
+				$(".moving3").css({"transform":"translate(31vw, 132vh) "})
+				$(".moving4").css({"transform":"translate(-5vw, 132vh )"})
+				setTimeout(function(){
+					$(".spells span").css({"top":"0"})
+					$(".su").css({"top":"30px"})
+					$(".m1").css({"transform":"scale(1)"})
+				},2200)
+			}else{
+				$(".container").css({"transform":"translateY(0vh)"})
+				$(".moving1").css({"transform":"translate(-34vw, 20vh)"})
+				$(".moving2").css({"transform":"translate(-7vw, 30vh)"})
+				$(".moving3").css({"transform":"translate(-34vw, 20vh)"})
+				$(".moving4").css({"transform":"translate(-34vw, 20vh)"})
+			}
+		})
+
+		$('.blank2').on('mousewheel', function(updo){
+			if(updo.originalEvent.wheelDelta/120 < 0) {
+				$(".m1").css({"transform":"scale(0)"})
+				setTimeout(function(){
+					$(".container").css({"transform":"translateY(-200vh) "})
+					$(".moving").css({"border-radius":"0vw","height":"30vh", "width":"20vw"})
+					$(".moving1").css({"transform":"translate(5vw, 222vh)"})
+					$(".moving2").css({"transform":"translate(-52vw, 222vh)"})
+					$(".moving3").css({"transform":"translate(52vw, 222vh)"})
+					$(".moving4").css({"transform":"translate(-5vw, 222vh)"})
+				},2000)
+				setTimeout(function(){
+					$(".m2").css({"transform":"scale(1)"})
+				},4300)
+
+			}else{
+				$(".m1").css({"transform":"scale(0)"})
+				setTimeout(function(){
+					$(".moving").css({"border-radius":"9vw","height":"13vw", "width":"13vw"})
+					$(".container").css({"transform":"translateY(0vh) "})
+					$(".moving1").css({"transform":"translate(53vw, 20vh)"})
+					$(".moving2").css({"transform":"translate(-7vw, 30vh)"})
+					$(".moving3").css({"transform":"translate(45vw, 55vh)"})
+					$(".moving4").css({"transform":"translate(-13vw, 65vh)"})
+				},2000)
+			}
+		})
+
+		$('.blank3').on('mousewheel', function(updo){
+			if(updo.originalEvent.wheelDelta/120 < 0) {
+
+			}else{
+				
+				$(".m2").css({"transform":"scale(0)"})
+				setTimeout(function(){
+				$(".container").css({"transform":"translateY(-100vh)  "})
+					$(".moving").css({"border-radius":"9vw","height":"14vw", "width":"14vw"})
+					$(".moving1").css({"transform":"translate(6vw, 132vh) "})
+					$(".moving2").css({"transform":"translate(-32vw, 132vh) "})
+					$(".moving3").css({"transform":"translate(31vw, 132vh) "})
+					$(".moving4").css({"transform":"translate(-5vw, 132vh )"})
+				},2200)
+					setTimeout(function(){
+						$(".m1").css({"transform":"scale(1)"})
+				},4300)
+			}
+		})
+	</script>
+</body>
+</html>
