@@ -81,3 +81,14 @@ video,video[poster] {
 #reset:hover {
 	border-bottom: 4px solid rgba(0,0,0,0.5);
 }
+
+#goback {
+    cursor: pointer;
+    border-bottom: 4px solid rgba(0,0,0,0.3);
+    padding-bottom: 2px;
+}
+
+#goback:hover {
+    border-bottom: 4px solid rgba(0,0,0,0.5);
+}
+
