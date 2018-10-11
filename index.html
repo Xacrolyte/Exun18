@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Exun Build 2018 &mdash; XINO</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
 	<link href="https://fonts.googleapis.com/css?family=Poppins:400,600,900" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="lib.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
@@ -26,6 +27,9 @@
 				<div class="m m2">
 					<img src="broom2.png" class="wat">
 				</div>
+				<div class="m m3">
+					X
+				</div>
 			</div>
 			<div class="moving moving2">
 				<div class="m m1">
@@ -33,6 +37,9 @@
 				</div>
 				<div class="m m2">
 					<img src="slip.png" class="wat">
+				</div>
+				<div class="m m3">
+					N
 				</div>
 			</div>
 			<div class="moving moving3">
@@ -42,6 +49,9 @@
 				<div class="m m2">
 					<img src="watch.png" class="wat">
 				</div>
+				<div class="m m3">
+					I
+				</div>
 			</div>
 			<div class="moving moving4">
 				<div class="m m1">
@@ -50,6 +60,10 @@
 
 				<div class="m m2">
 					<img src="watch.png" class="wat">
+				</div>
+
+				<div class="m m3">
+					O
 				</div>
 			</div>
 		</div>
@@ -104,7 +118,6 @@
 				</div>
 			</div>
 			<div class="page3 full">
-
 				<div class="phead">
 					<div class="heading">BATTLE GEAR</div>
 					<div class="sub">
@@ -161,6 +174,15 @@
 					</div>
 				</div>
 			</div>
+
+			<div class="page4 cflex-full">
+				<div class="words cflex">
+					<span class="word w1">MADE</span>
+					<span class="word w2">WITH</span>
+					<span class="word w3"><img src="love.png" class="love"></span>
+					<span class="word w4">BY</span>
+				</div>
+			</div>
 		</div>
 	</div>
 
@@ -177,7 +199,7 @@
 			$(".container").css({"transform":"translateY(-100vh)  "})
 			$(".moving").css({"border-radius":"9vw","height":"14vw", "width":"14vw"})
 			$(".moving1").css({"transform":"translate(6vw, 132vh) "})
-			$(".moving2").css({"transform":"translate(-32vw, 132vh) "})
+			$(".moving2").css({"transform":"translate(-30vw, 132vh) "})
 			$(".moving3").css({"transform":"translate(31vw, 132vh) "})
 			$(".moving4").css({"transform":"translate(-5vw, 132vh )"})
 			setTimeout(function(){
@@ -191,7 +213,7 @@
 				$(".container").css({"transform":"translateY(-100vh)  "})
 				$(".moving").css({"border-radius":"9vw","height":"14vw", "width":"14vw"})
 				$(".moving1").css({"transform":"translate(6vw, 132vh) "})
-				$(".moving2").css({"transform":"translate(-32vw, 132vh) "})
+				$(".moving2").css({"transform":"translate(-30vw, 132vh) "})
 				$(".moving3").css({"transform":"translate(31vw, 132vh) "})
 				$(".moving4").css({"transform":"translate(-5vw, 132vh )"})
 				setTimeout(function(){
@@ -199,8 +221,6 @@
 					$(".su").css({"top":"30px"})
 					$(".m1").css({"transform":"scale(1)"})
 				},2200)
-			}else{
-
 			}
 		})
 
@@ -234,20 +254,52 @@
 
 		$('.blank3').on('mousewheel', function(updo){
 			if(updo.originalEvent.wheelDelta/120 < 0) {
-
+				$(".m2").css({"transform":"scale(0)"})
+				setTimeout(function(){
+					$(".container").css({"transform":"translateY(-300vh)  "})
+					$(".moving").css({"border-radius":"9vw","height":"8vw", "width":"8vw"})
+					$(".moving1").css({"transform":"translate(32vw, 350vh) "})
+					$(".moving2").css({"transform":"translate(-41vw, 350vh) "})
+					$(".moving3").css({"transform":"translate(41vw, 350vh) "})
+					$(".moving4").css({"transform":"translate(-32vw, 350vh )"})
+				},2200)
+				setTimeout(function(){
+					$(".m1").css({"transform":"scale(0)"})
+					$(".m3").css({"transform":"scale(1)"})
+					$(".word").css({"top":"0vh"})
+				},4300)
 			}else{
-				
 				$(".m2").css({"transform":"scale(0)"})
 				setTimeout(function(){
 					$(".container").css({"transform":"translateY(-100vh)  "})
 					$(".moving").css({"border-radius":"9vw","height":"14vw", "width":"14vw"})
 					$(".moving1").css({"transform":"translate(6vw, 132vh) "})
-					$(".moving2").css({"transform":"translate(-32vw, 132vh) "})
+					$(".moving2").css({"transform":"translate(-30vw, 132vh) "})
 					$(".moving3").css({"transform":"translate(31vw, 132vh) "})
 					$(".moving4").css({"transform":"translate(-5vw, 132vh )"})
 				},2200)
 				setTimeout(function(){
 					$(".m1").css({"transform":"scale(1)"})
+				},4300)
+			}
+		})
+
+		$('.blank4').on('mousewheel', function(updo){
+			if(updo.originalEvent.wheelDelta/120 < 0) {
+
+			}else{
+				$(".m1").css({"transform":"scale(0)"})
+				$(".m3").css({"transform":"scale(0)"})
+				setTimeout(function(){
+					$(".container").css({"transform":"translateY(-200vh) "})
+					$(".moving").css({"border-radius":"0vw","height":"30vh", "width":"20vw"})
+					$(".moving1").css({"transform":"translate(5vw, 222vh)"})
+					$(".moving2").css({"transform":"translate(-52vw, 222vh)"})
+					$(".moving3").css({"transform":"translate(52vw, 222vh)"})
+					$(".moving4").css({"transform":"translate(-5vw, 222vh)"})
+				},2000)
+				setTimeout(function(){
+					$(".m2").css({"transform":"scale(0.7)"})
 				},4300)
 			}
 		})
