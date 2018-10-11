@@ -206,6 +206,8 @@
 				$(".spells span").css({"top":"0"})
 				$(".su").css({"top":"30px"})
 				$(".m1").css({"transform":"scale(1)"})
+				$(".m2").css({"transform":"scale(0)"})
+				$(".m3").css({"transform":"scale(0)"})
 			},2200)
 		})
 		$('.blank1').on('mousewheel', function(updo){
@@ -220,6 +222,8 @@
 					$(".spells span").css({"top":"0"})
 					$(".su").css({"top":"30px"})
 					$(".m1").css({"transform":"scale(1)"})
+					$(".m2").css({"transform":"scale(0)"})
+					$(".m3").css({"transform":"scale(0)"})
 				},2200)
 			}
 		})
@@ -237,6 +241,8 @@
 				},2000)
 				setTimeout(function(){
 					$(".m2").css({"transform":"scale(0.7)"})
+					$(".m1").css({"transform":"scale(0)"})
+					$(".m3").css({"transform":"scale(0)"})
 				},4300)
 
 			}else{
@@ -249,6 +255,11 @@
 					$(".moving3").css({"transform":"translate(45vw, 55vh)"})
 					$(".moving4").css({"transform":"translate(-13vw, 65vh)"})
 				},2000)
+				setTimeout(function(){
+					$(".m2").css({"transform":"scale(0)"})
+					$(".m1").css({"transform":"scale(0)"})
+					$(".m3").css({"transform":"scale(0)"})
+				},2300)
 			}
 		})
 
@@ -265,6 +276,7 @@
 				},2200)
 				setTimeout(function(){
 					$(".m1").css({"transform":"scale(0)"})
+					$(".m2").css({"transform":"scale(0)"})
 					$(".m3").css({"transform":"scale(1)"})
 					$(".word").css({"top":"0vh"})
 				},4300)
@@ -280,6 +292,8 @@
 				},2200)
 				setTimeout(function(){
 					$(".m1").css({"transform":"scale(1)"})
+					$(".m2").css({"transform":"scale(0)"})
+					$(".m3").css({"transform":"scale(0)"})
 				},4300)
 			}
 		})
@@ -300,6 +314,8 @@
 				},2000)
 				setTimeout(function(){
 					$(".m2").css({"transform":"scale(0.7)"})
+					$(".m3").css({"transform":"scale(0)"})
+					$(".m1").css({"transform":"scale(0)"})
 				},4300)
 			}
 		})
