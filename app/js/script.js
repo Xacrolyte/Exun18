@@ -25,7 +25,7 @@ artyom.addCommands([
         }
     },
     {
-        indexes: ["tilemetafora","metafora"],
+        indexes: ["tilemetafora","metafora", "kilometer", "metafora", "metaphor"],
         action: function(i){
             castSpell(0);
         }
